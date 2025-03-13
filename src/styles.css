@@ -1,0 +1,162 @@
+.playfair-display-1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 650;
+    font-style: normal;
+  }
+.lora-1 {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 0.15fr 2fr 0.1fr;
+    background: url(./assets/images/bg.jpg) no-repeat top/100%;
+    background-attachment: fixed;
+    color: #F8F5EE;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    background-color: rgba(26, 26, 26, 0.4);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-button {
+    font-family: 'Lora', sans-serif;
+    width: 70px;
+    height: 35px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5%;
+    background-color: #D4AF37;
+    color: black;
+}
+
+.nav-button:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.home-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    background: rgba(26, 26, 26, 0.3);
+}
+
+.title-text {
+    font-family: 'Playfair Display';
+    margin: -10px;
+}
+
+.title-upper-text {
+    font-size: 32px;
+}
+
+.title-lower-text {
+    font-size: 105px;
+}
+
+.menu {
+    background-color: #1a1a1a;
+    font-size: 20px;
+    width: 60%;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+/* 
+.menu > * {
+    border: 1px solid red;
+} */
+
+.menu-logo-container {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-logo {
+    height: 200px;
+    width: 200px;
+}
+
+.menu-category-name {
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 40px;
+}
+
+.menu-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-item {
+    width: 450px;
+    text-align: center;
+    padding: 5px;
+}
+
+.menu-item-name {
+    font-size: 255px;
+}
+
+.menu-item-desc {
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(26, 26, 26, 0.8);
+}
+
+footer > * {
+    margin: 0;
+}
