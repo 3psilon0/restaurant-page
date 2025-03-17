@@ -2,7 +2,7 @@ import menuLogo from './assets/images/menu-logo.png'
 
 export default function() {
     const menuDiv = document.createElement('div');
-    menuDiv.innerHTML = `<div class="menu-logo-container">"<img class="menu-logo" src="${menuLogo}" alt="Menu Logo"></div>`;
+    menuDiv.innerHTML = `<div class="menu-logo-container"><img class="menu-logo" src="${menuLogo}" alt="Menu Logo"></div>`;
     menuDiv.className = 'menu';
 
     const menu = [  

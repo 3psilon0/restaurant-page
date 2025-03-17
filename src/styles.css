@@ -31,6 +31,10 @@ body {
     width: 70px;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 header {
     position: sticky;
     top: 0px;
@@ -102,11 +106,8 @@ header {
     grid-template-rows: 0.3fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
+    overflow: scroll;
 }
-/* 
-.menu > * {
-    border: 1px solid red;
-} */
 
 .menu-logo-container {
     grid-column: 1 / 3;
@@ -139,12 +140,87 @@ header {
     padding: 5px;
 }
 
-.menu-item-name {
-    font-size: 255px;
-}
-
 .menu-item-desc {
     font-style: italic;
+}
+
+.about {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px 60px 20px 60px;
+    overflow: scroll;
+}
+
+.about-title {
+    font-family: 'Playfair Display';
+    font-size: 48px;
+}
+
+.about-text {
+    text-align: justify;
+    font-style: 'Lora';
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact {
+    width: 60%;
+    height: 75%;
+    background-color: #1a1a1a;
+    display: grid;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    overflow: scroll;
+}
+
+.contact-title {
+    grid-column: 1 / 3;
+    text-align: center;
+    padding-top: 75px;
+    font-style: "Playfair Display";
+    font-size: 40px;
+    margin: 0;
+}
+
+
+
+.contact-icon{
+    height: 60px;
+    width: 60px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-elem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    gap: 15px;
+    width: 50%;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-map {
+    height: 350px;
+    width: 550px;
+    margin: 40px;
 }
 
 footer {
